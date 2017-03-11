@@ -7,17 +7,16 @@ using CS280_Homework_1._2;
 
 namespace CS280_Homework_2
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            
             Console.Write("請輸入寶可夢的編號:");
             try
             {
                 int Poke_Number = int.Parse(Console.ReadLine());
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 Console.WriteLine("編號輸入錯誤");
                 Console.WriteLine("錯誤訊息:\n" + e.ToString());
